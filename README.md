@@ -53,11 +53,11 @@ import pandas as pd
 df = pd.read_csv("C:/Users/hp/Desktop/college_survey.csv")
 
 # Print all column names
-print("🔍 Column Names:\n", df.columns.tolist())
+print("Column Names:\n", df.columns.tolist())
 
 # Show Alice's full data row
 alice_data = df[df['Name'].str.strip().str.lower() == "alice"]
-print("\n🧾 Alice's Row:\n")
+print("\n Alice's Row:\n")
 print(alice_data.T)  # transpose to read better
 
 import pandas as pd
